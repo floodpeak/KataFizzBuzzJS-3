@@ -1,6 +1,6 @@
-module.exports = function(number){
   var base1 = 3
   var base2 = 5
+module.exports = function(number){
   if(number % (base1*base2) == 0 ){
     return 'FizzBuzz'
   }
