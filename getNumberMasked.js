@@ -4,13 +4,15 @@
   var mask2 = 'Buzz'
 
 module.exports = function(number){
-  if(number % base1 == 0 && number % base2 == 0 ){
+  var isMultipleOfBase1 = number % base1 == 0
+  var isMultipleOfBase2 = number % base2 == 0
+  if( isMultipleOfBase1 && isMultipleOfBase2 ){
     return mask1 + mask2
   }
-  if(number % base1 == 0){
+  if(isMultipleOfBase1){
     return mask1
   }
-  if(number % base2 == 0){
+  if(isMultipleOfBase2){
     return mask2
   }
   return number
