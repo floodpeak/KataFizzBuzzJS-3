@@ -8,13 +8,10 @@ module.exports = function(number){
   var isMultipleOfBase2 = number % base2 == 0
   var maskedNumber = ''
   if(isMultipleOfBase1){
-    maskedNumber = mask1
+    maskedNumber += mask1
   }
   if(isMultipleOfBase2){
-    maskedNumber = mask2
-  }
-  if( isMultipleOfBase1 && isMultipleOfBase2 ){
-    maskedNumber = mask1 + mask2
+    maskedNumber += mask2
   }
   return maskedNumber === '' ? number : maskedNumber
 }
