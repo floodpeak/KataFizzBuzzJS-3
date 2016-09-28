@@ -6,14 +6,15 @@
 module.exports = function(number){
   var isMultipleOfBase1 = number % base1 == 0
   var isMultipleOfBase2 = number % base2 == 0
-  if( isMultipleOfBase1 && isMultipleOfBase2 ){
-    return mask1 + mask2
-  }
+  var maskedNumber = ''
   if(isMultipleOfBase1){
-    return mask1
+    maskedNumber = mask1
   }
   if(isMultipleOfBase2){
-    return mask2
+    maskedNumber = mask2
   }
-  return number
+  if( isMultipleOfBase1 && isMultipleOfBase2 ){
+    maskedNumber = mask1 + mask2
+  }
+  return maskedNumber === '' ? number : maskedNumber
 }
