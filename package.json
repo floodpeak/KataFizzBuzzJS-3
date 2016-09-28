@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  },
+  "name": "fizzbuzz-3",
+  "description": "practice for http://codingdojo.org/cgi-bin/index.pl?KataFizzBuzz in javascript with mocha and chai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floodpeak/KataFizzBuzzJS-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floodpeak/KataFizzBuzzJS-3/issues"
+  },
+  "homepage": "https://github.com/floodpeak/KataFizzBuzzJS-3#readme"
+}
